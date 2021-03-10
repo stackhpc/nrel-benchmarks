@@ -7,7 +7,7 @@
 
     Run using e.g.:
 
-        reframe/bin/reframe -C reframe_config.py -c apps/imb/ --run --performance-report
+        reframe -C reframe_config.py -c apps/imb/ --run --performance-report
 """
 
 import reframe as rfm
@@ -28,7 +28,8 @@ class IMB_MPI1(rfm.RunOnlyRegressionTest):
 
     def __init__(self):
         self.valid_systems = ['*']
-        self.valid_prog_environs = ['imb']
+        self.valid_prog_environs = ['*']
+        self.modules = ['intel-mpi-benchmarks']
         self.exclusive_access = True
         self.perf_patterns = {} # must do this
         self.perf_patterns = {} # something funny about reframe's attr lookup
