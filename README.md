@@ -1,12 +1,12 @@
 # hpc-tests
 
-**NB This is a work-in-progress and READMEs etc may not be up to date**
+**NB This is a fork for the NREL prototype environment and is not fully complete**
 
 Performance testing-as-code for HPC systems.
 
 This package defines automated performance tests for HPC systems using both synthetic and MPI-based application benchmarks. It is designed to easily compare results from different systems, system configurations and/or environments (e.g. compilers & MPI libraries). At present results are included for 2x systems, with comparisons of performance using InfiniBand and RoCE (RDMA over Converged Ethernet) interconnects.
 
-The current test matrix is shown below:
+The current test matrix is shown below - **NB: Note only IMB and CP2K have been updated for the NREL prototype environment at present.**
 
 | Application | Benchmark | MPI Library | Notes |
 | ---         | ---       | ---         | ---   |
