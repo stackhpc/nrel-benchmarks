@@ -58,32 +58,18 @@ Some way of compiling applications is required  - instructions here use `spack` 
 
         git clone git@github.com:stackhpc/hpc-tests.git
 
-1. Install `conda`:
-  
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-        bash Miniconda3-latest-Linux-x86_64.sh
-      
-   Follow prompts to initialise, then close/reopen shell.
+1. Load `reframe` via spack:
 
-1. Create and activate the `hpc-tests` conda environment:
-    
-        cd hpc-tests
+        spack load reframe
+
+1. Create and activate an `hpc-tests` `conda` environment:
+
+        spack load miniconda3
+        conda init bash # if you have not used conda before in this shell
         conda env create -f environment.yml
         conda activate hpc-tests
 
-1. Install ReFrame inside `hpc-tests/`:
-
-        git clone https://github.com/eth-cscs/reframe.git
-
-1. Run ReFrame's own test suite:
-
-        # ensure a compiler is available e.g. by loading a compiler module - NB: this is not shown in the ReFrame docs but is essential!
-        cd reframe/
-        ./test_reframe.py -v
-  
-    This will skip some tests but should not fail any.
-
-1. Set up a public Jupyter notebook server:
+1. TODO: UPDATE: Set up a public Jupyter notebook server:
 
         cd hpc-tests/setup
         ./jupyter-server.sh <<< PASSWORD
@@ -129,9 +115,11 @@ You also need to update various files in 'systems':
 
 ## Usage
 
-All the below assumes the conda environment has been activated:
+Setup your environment:
 
-      conda activate hpc-tests
+    spack load reframe
+    spack load miniconda3
+    conda activate hpc-tests
 
 Firstly, run tests for one or more applications:
 
@@ -140,9 +128,9 @@ Firstly, run tests for one or more applications:
 - Run all tests for this application using something like:
 
       cd hpc-tests
-      reframe/bin/reframe -C reframe_config.py -c <application>/ --run --performance-report
+      reframe -C reframe_config.py -c <application>/ --run --performance-report
 
-  Tests can be run for specfic systems/partitions by appending e.g.: `--system alaska:ib-gcc9-openmpi4-ucx`.
+  Tests can be run for specfic systems/partitions by appending e.g.: `--system <system>:<partition>`.
   Some tests also have tags which can be used to filter tests further - see the appropriate README.
 
 - ReFrame will generate two types of output for each test:
