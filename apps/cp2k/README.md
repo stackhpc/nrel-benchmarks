@@ -1,6 +1,6 @@
 # CP2K
 
-Performance tests of the CP2K quantum chemistry and solid state physics simluation package https://www.cp2k.org/ using the H20-256 benchmark distributed with the CP2K source code.
+Performance tests of the CP2K quantum chemistry and solid state physics simulation package https://www.cp2k.org/ using the H20-256 benchmark distributed with the CP2K source code.
 
 The benchmark is run on a range of number of nodes, from 1 up to all available. Each run uses as many processes per node as there are physical cores.
 
@@ -26,7 +26,7 @@ Note that this is an MPI-only version - `cp2k+openmp` installs for MPI+OpenMP di
 
 Run using e.g.:
 
-    reframe/bin/reframe -C reframe_config.py -c apps/cp2k/ --run --performance-report
+    reframe -C reframe_config.py -c apps/cp2k/ --run --performance-report
 
 Run on a specific number of nodes by appending:
 
