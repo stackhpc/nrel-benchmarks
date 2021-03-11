@@ -150,7 +150,7 @@ Secondly, create/update plots for this system:
       cd /projects/benchmarks
       jupyter notebook
 
-- Then browse to `https://<login-node-ip>:<port>` where port is given in the output from above, and login using the password you specified above.
+- Then browse to `https://<login-node-ip>:<port>` where port is given in the output from above, and login using the password you specified above (note: the notebook command output will include the hostname but you will have to use the IP).
 
 - You will now see a file browser. Navigate to `apps/<application>/<application>.ipynb`.
 
