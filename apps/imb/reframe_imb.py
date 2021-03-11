@@ -18,8 +18,8 @@ import sys, os
 from collections import namedtuple
 from reframe.core.logging import getlogger
 sys.path.append('.')
+from reframe_extras import ScalingTest
 import modules
-from modules.reframe_extras import ScalingTest
 
 Metric = namedtuple('Metric', ['column', 'function', 'unit', 'label'])
 
