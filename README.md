@@ -72,7 +72,7 @@ Some way of compiling applications is required  - instructions here use `spack` 
 
 1. TODO: UPDATE: Set up a public Jupyter notebook server:
 
-        cd hpc-tests/setup
+        cd setup
         ./jupyter-server.sh <<< PASSWORD
       
     Replacing `PASSWORD` with a password for Jupyter. This only needs to be done once and sets up a self-signed SSL certificate - note your browser will complain when connecting to the notebook.
@@ -129,7 +129,7 @@ Firstly, run tests for one or more applications:
 
 - Run all tests for this application using something like:
 
-      cd hpc-tests
+      cd /projects/benchmarks
       reframe -C reframe_config.py -c apps/<application>/ --run --performance-report
 
   Tests can be run for specfic systems/partitions by appending e.g.: `--system <system>:<partition>`.
@@ -147,7 +147,7 @@ Secondly, create/update plots for this system:
 
 - Start the jupyter server:
 
-      cd hpc-tests
+      cd /projects/benchmarks
       jupyter notebook
 
 - Then browse to `https://<login-node-ip>:<port>` where port is given in the output from above, and login using the password you specified above.
