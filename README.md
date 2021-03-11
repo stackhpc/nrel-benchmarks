@@ -56,6 +56,7 @@ Some way of compiling applications is required  - instructions here use `spack` 
 
 1. Clone this repo:
 
+        cd /projects/benchmarks
         git clone git@github.com:stackhpc/hpc-tests.git
 
 1. Load `reframe` via spack:
@@ -117,6 +118,7 @@ You also need to update various files in 'systems':
 
 Setup your environment:
 
+    cd /projects/benchmarks
     spack load reframe
     spack load miniconda3
     conda activate hpc-tests
@@ -128,7 +130,7 @@ Firstly, run tests for one or more applications:
 - Run all tests for this application using something like:
 
       cd hpc-tests
-      reframe -C reframe_config.py -c <application>/ --run --performance-report
+      reframe -C reframe_config.py -c apps/<application>/ --run --performance-report
 
   Tests can be run for specfic systems/partitions by appending e.g.: `--system <system>:<partition>`.
   Some tests also have tags which can be used to filter tests further - see the appropriate README.

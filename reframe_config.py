@@ -9,7 +9,7 @@ site_configuration = {
         {
             'name':'proto',
             'descr': 'Vermilion prototype',
-            'hostnames': ['nrel-login-*'],
+            'hostnames': ['proto-login-*'],
             'modules_system': 'spack',
             'stagedir': '/scratch/benchmarks',
             'partitions': [
