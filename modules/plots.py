@@ -9,10 +9,12 @@ def add_roce_ib_factor(data, round=2):
         generic = [sys] + [('[roce/ib]' if p in ('ib', 'roce') else p) for p in part.split('-')]
         pairs.setdefault(tuple(generic), []).append(syspart)
     # now add columns:
-    for generic, (c1, c2) in pairs.items():
-        c_ib, c_roce = sorted([c1, c2]) # get IB first
-        newcol = generic[0] + ':' + '-'.join(generic[1:])
-        data[newcol] = (data[c_roce] / data[c_ib]).round(round)
+    for generic, versions in pairs.items():
+        if len(versions) == 2:
+            (c1, c2) = versions
+            c_ib, c_roce = sorted([c1, c2]) # get IB first
+            newcol = generic[0] + ':' + '-'.join(generic[1:])
+            data[newcol] = (data[c_roce] / data[c_ib]).round(round)
 
 def plot_perf_history(perf_df):
     """ Generate plots of performance history.
