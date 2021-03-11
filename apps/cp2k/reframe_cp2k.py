@@ -15,7 +15,7 @@ import sys, os
 from collections import namedtuple
 from reframe.core.logging import getlogger
 sys.path.append('.')
-from modules.reframe_extras import sequence, Scheduler_Info, CachedRunTest
+from reframe_extras import sequence, Scheduler_Info, CachedRunTest
 from modules.utils import parse_time_cmd
 # CSCS include a CP2k test which provides the input file we need, so find that test:
 RFM_CP2K_PATH = os.path.join(os.path.dirname(rfm.__path__[0]), 'cscs-checks', 'apps', 'cp2k')
