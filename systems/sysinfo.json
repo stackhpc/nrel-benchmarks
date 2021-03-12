@@ -18,5 +18,8 @@
     },
     "csd3:cclake-roce-*": {
         "interconnect_Gb": 50
+    },
+    "proto:*": {
+        "interconnect_Gb": 10
     }
 }
