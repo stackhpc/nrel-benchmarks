@@ -1,6 +1,6 @@
 """ Gather system information from all idle nodes in a (ReFrame) partition.
 
-    reframe/bin/reframe -C reframe_config.py -c apps/sysinfo/ --run
+    reframe -C reframe_config.py -c apps/sysinfo/ --run
 """
 
 import reframe as rfm
@@ -11,7 +11,7 @@ import sys, os, glob, json
 from collections import namedtuple
 from reframe.core.logging import getlogger
 sys.path.append('.')
-from modules.reframe_extras import ScalingTest
+from reframe_extras import ScalingTest
 from modules.utils import parse_time_cmd
 from modules.sysinfo import sysinfo
 
@@ -21,7 +21,7 @@ class Sysinfo(rfm.RunOnlyRegressionTest, ScalingTest):
     def __init__(self):
         
         self.valid_systems = ['*']
-        self.valid_prog_environs = ['sysinfo']
+        self.valid_prog_environs = ['*']
 
         self.partition_fraction = 1.0 # all nodes
         self.node_fraction = -1 # single process per node
