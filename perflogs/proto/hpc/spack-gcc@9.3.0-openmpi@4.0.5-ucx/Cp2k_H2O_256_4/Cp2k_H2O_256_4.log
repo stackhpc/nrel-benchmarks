@@ -1,0 +1,4 @@
+2021-03-10T11:49:51+00:00|reframe 3.4 (rev: 303230fe)|Cp2k_H2O_256_4 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=58|cp2k_time=576.621|s|ref=0 (l=null, u=null)|num_procs=64,num_nodes=4
+2021-03-11T17:53:48+00:00|reframe 3.4 (rev: d0610f7a)|Cp2k_H2O_256_4 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=48|cp2k_time=576.864|s|ref=0 (l=null, u=null)|num_nodes=4,num_procs=64
+2021-03-12T09:59:57+00:00|reframe 3.4 (rev: d0610f7a)|Cp2k_H2O_256_4 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=51|cp2k_time=578.727|s|ref=0 (l=null, u=null)|num_nodes=4,num_procs=64
+2021-03-12T09:59:57+00:00|reframe 3.4 (rev: d0610f7a)|Cp2k_H2O_256_4 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=51|runtime_real=580.445|s|ref=0 (l=null, u=null)|num_nodes=4,num_procs=64

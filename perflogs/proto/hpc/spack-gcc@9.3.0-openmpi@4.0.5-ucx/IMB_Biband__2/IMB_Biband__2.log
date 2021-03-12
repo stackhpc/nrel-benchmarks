@@ -1,0 +1,2 @@
+2021-03-09T15:10:09+00:00|reframe 3.4 (rev: 303230fe)|IMB_Biband__2 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=50|max_bandwidth=2345.27|Mbytes/sec|ref=0 (l=null, u=null)|procs_per_node=2,biband,num_nodes=2,num_procs=4
+2021-03-11T17:15:14+00:00|reframe 3.4 (rev: d0610f7a)|IMB_Biband__2 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=45|max_bandwidth=2344.58|Mbytes/sec|ref=0 (l=null, u=null)|biband,num_procs=4,procs_per_node=2,num_nodes=2

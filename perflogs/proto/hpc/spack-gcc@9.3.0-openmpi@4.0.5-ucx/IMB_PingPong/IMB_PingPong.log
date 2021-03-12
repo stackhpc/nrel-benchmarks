@@ -1,0 +1,10 @@
+2021-03-09T14:18:07+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=36|max_bandwidth=1126.23|Mbytes/sec|ref=0 (l=null, u=null)|pingpong
+2021-03-09T14:18:07+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=36|min_latency=21.12|t[usec]|ref=0 (l=null, u=null)|pingpong
+2021-03-09T14:53:01+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=37|max_bandwidth=1116.0|Mbytes/sec|ref=0 (l=null, u=null)|pingpong
+2021-03-09T14:53:01+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=37|min_latency=15.76|t[usec]|ref=0 (l=null, u=null)|pingpong
+2021-03-09T14:53:35+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=38|max_bandwidth=1117.9|Mbytes/sec|ref=0 (l=null, u=null)|pingpong
+2021-03-09T14:53:35+00:00|reframe 3.4 (rev: 303230fe)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=38|min_latency=15.72|t[usec]|ref=0 (l=null, u=null)|pingpong
+2021-03-11T16:58:17+00:00|reframe 3.4 (rev: d0610f7a)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=32|max_bandwidth=1122.9|Mbytes/sec|ref=0 (l=null, u=null)|pingpong
+2021-03-11T16:58:17+00:00|reframe 3.4 (rev: d0610f7a)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=32|min_latency=20.98|t[usec]|ref=0 (l=null, u=null)|pingpong
+2021-03-11T16:58:34+00:00|reframe 3.4 (rev: d0610f7a)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=33|max_bandwidth=1124.74|Mbytes/sec|ref=0 (l=null, u=null)|pingpong
+2021-03-11T16:58:34+00:00|reframe 3.4 (rev: d0610f7a)|IMB_PingPong on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=33|min_latency=16.83|t[usec]|ref=0 (l=null, u=null)|pingpong

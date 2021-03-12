@@ -1,0 +1,2 @@
+2021-03-09T14:56:23+00:00|reframe 3.4 (rev: 303230fe)|IMB_Uniband_0_25 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=41|max_bandwidth=1176.4|Mbytes/sec|ref=0 (l=null, u=null)|procs_per_node=4,num_nodes=2,num_procs=8,uniband
+2021-03-11T17:01:26+00:00|reframe 3.4 (rev: d0610f7a)|IMB_Uniband_0_25 on proto:hpc using spack-gcc@9.3.0-openmpi@4.0.5-ucx|jobid=36|max_bandwidth=1174.87|Mbytes/sec|ref=0 (l=null, u=null)|num_nodes=2,num_procs=8,uniband,procs_per_node=4
