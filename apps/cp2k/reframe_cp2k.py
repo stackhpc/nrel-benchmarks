@@ -31,7 +31,7 @@ class Cp2k_H2O_256(rfm.RunOnlyRegressionTest):
         self.valid_prog_environs = ['*']
         self.modules = ['cp2k']
         self.extra_resources = {}
-        self.pre_run = ['time \\']
+        self.prerun_cmds = ['time \\']
         self.executable = 'cp2k.popt'
         self.executable_opts = ['H2O-256.inp']
         self.sourcesdir = os.path.join(os.path.abspath(RFM_CP2K_PATH), 'src')
