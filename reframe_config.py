@@ -7,18 +7,18 @@ all_partitions = {
 site_configuration = {
     'systems': [
         {
-            'name':'proto',
-            'descr': 'Vermilion prototype',
-            'hostnames': ['proto-login-*'],
+            'name':'vermilion',
+            'descr': 'Vermilion',
+            'hostnames': ['vermilion'],
             'modules_system': 'spack',
             'stagedir': '/scratch/benchmarks',
             'partitions': [
                 {
-                    'name': 'hpc',
+                    'name': 'lg',
                     'scheduler': 'slurm',
                     'launcher': 'srun',
-                    'access': ['--partition=hpc'],
-                    'descr': 'hpc partition',
+                    'access': ['--partition=lg'],
+                    'descr': 'large jobs partition',
                     'environs': ['spack-gcc@9.3.0-openmpi@4.0.5-ucx'],
                     'variables': [
                         ['SLURM_MPI_TYPE', 'pmix_v3'],
@@ -30,7 +30,7 @@ site_configuration = {
     'environments': [
         {
             'name': 'spack-gcc@9.3.0-openmpi@4.0.5-ucx',
-            'target_systems': ['proto'],
+            'target_systems': ['vermilion'],
         },
     ],
     'logging': [
