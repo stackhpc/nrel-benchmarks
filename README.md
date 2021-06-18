@@ -57,7 +57,7 @@ Some way of compiling applications is required  - instructions here use `spack` 
 1. Clone this repo:
 
         cd /projects/benchmarks
-        git clone git@github.com:stackhpc/hpc-tests.git
+        git clone git@github.com:stackhpc/nrel-benchmarks.git
 
 1. Load `reframe` via spack:
 
@@ -66,11 +66,12 @@ Some way of compiling applications is required  - instructions here use `spack` 
 1. Create and activate an `hpc-tests` `conda` environment:
 
         spack load miniconda3
-        conda init bash # if you have not used conda before in this shell
+        conda init bash
         conda env create -f environment.yml
+        # now logout and back in:
         conda activate hpc-tests
 
-1. TODO: UPDATE: Set up a public Jupyter notebook server:
+1. Set up a public Jupyter notebook server:
 
         cd setup
         ./jupyter-server.sh <<< PASSWORD
