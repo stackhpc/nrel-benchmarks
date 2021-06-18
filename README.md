@@ -78,9 +78,9 @@ Some way of compiling applications is required  - instructions here use `spack` 
       
     Replacing `PASSWORD` with a password for Jupyter. This only needs to be done once and sets up a self-signed SSL certificate - note your browser will complain when connecting to the notebook.
 
-1. If using `spack` to compile applications, install and set it up - see sections below.
+1. If using `spack` to compile applications, install and set it up - see sections below. **NB:** The Slurm appliance's `spack.yml` playbook will install Intel MPI Benchmarks and CP2K.
 
-1. For a new system, add it to the reframe configuration file `reframe_config.py` - see separate section below.
+1. For a new system, add it to the reframe configuration file `reframe_config.py` - see separate section below. **NB:** This should already be done for Vermilion's `lg` partition.
 
 
 ## ReFrame Concepts & Configuration
@@ -124,17 +124,15 @@ Setup your environment:
     spack load miniconda3
     conda activate hpc-tests
 
-Firstly, run tests for one or more applications:
+Firstly, run tests for one of the applications installed via spack:
 
-- If necessary, install the required application - see the appropriate `apps/<application>/README.md` for help.
+    # Intel MPI Benchmarks:
+    reframe -C reframe_config.py -c apps/imb/ --run --performance-report
 
-- Run all tests for this application using something like:
+    # CP2K:
+    reframe -C reframe_config.py -c apps/cp2k/ --run --performance-report
 
-      cd /projects/benchmarks
-      reframe -C reframe_config.py -c apps/<application>/ --run --performance-report
-
-  Tests can be run for specfic systems/partitions by appending e.g.: `--system <system>:<partition>`.
-  Some tests also have tags which can be used to filter tests further - see the appropriate README.
+Note some tests also have tags which can be used to filter tests - see the appropriate README.
 
 - ReFrame will generate two types of output for each test:
     - Test outputs, including stdout, stderr and any results files which should be retained. These are copied to the `output/` directory tree, and overwritten each time a test is re-run.
